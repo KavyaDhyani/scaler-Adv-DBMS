@@ -1,0 +1,7 @@
+Operating systems use file systems to organize and manage data stored on secondary storage devices such as SSDs and hard
+disks. Every file is represented internally using metadata structures called inodes, which store information like
+permissions, file size, timestamps, and pointers to data blocks. When a process requests to read a file, the request is
+performed through a system call that transitions execution from user mode to kernel mode. The kernel then interacts with
+the Virtual File System (VFS), filesystem drivers, page cache, and disk drivers to retrieve the required data
+efficiently. Modern operating systems also use mechanisms such as DMA and memory mapping to optimize file access and
+reduce CPU overhead during data transfer operations.
